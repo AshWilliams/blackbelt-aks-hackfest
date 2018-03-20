@@ -1,0 +1,170 @@
+{
+	"info": {
+		"name": "Heroes",
+		"_postman_id": "52f1fd9b-5251-43be-5dda-3bee4da358d1",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Localhost 8080 (Web)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080"
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "Localhost 3000 (API)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						""
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Heroes rated",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/api/heroes/rated",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"heroes",
+						"rated"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "All heroes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/api/heroes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"heroes"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Sites (JLA)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/api/sites/JLA",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"sites",
+						"JLA"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Sites (BOE)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:3000/api/sites/BOE",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"sites",
+						"BOE"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Rate your heroes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"userIp\":\"127.0.0.1\",\r\n\t\"ratings\":[\r\n\t\t{\r\n\t\t\t\"id\":\"5a4f97cddbbb7e24bd9a13d5\",\r\n\t\t\t\"rating\":0\r\n\t\t\t\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"id\":\"5a4f97dcdbbb7e24bd9a13d6\",\r\n\t\t\t\"rating\":0\r\n\t\t\t\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"id\":\"5a4f97e7dbbb7e24bd9a13d7\",\r\n\t\t\t\"rating\":5\r\n\t\t\t\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"id\":\"5a4f97f0dbbb7e24bd9a13d8\",\r\n\t\t\t\"rating\":0\r\n\t\t\t\r\n\t\t}\r\n\t\t]\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/rate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"rate"
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
